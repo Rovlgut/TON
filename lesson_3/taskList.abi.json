@@ -1,0 +1,76 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addTask",
+			"inputs": [
+				{"name":"name","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "oppenedTasks",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint8"}
+			]
+		},
+		{
+			"name": "listTasks",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string[]"}
+			]
+		},
+		{
+			"name": "getTaskName",
+			"inputs": [
+				{"name":"key","type":"uint8"}
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "deleteTask",
+			"inputs": [
+				{"name":"key","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "markComplete",
+			"inputs": [
+				{"name":"key","type":"uint8"}
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"name","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"isCompleted","type":"bool"}],"name":"tasks","type":"map(uint8,tuple)"},
+		{"name":"indexTasks","type":"uint8"},
+		{"name":"indexList","type":"uint8[]"}
+	]
+}

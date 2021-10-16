@@ -57,11 +57,11 @@ contract taskList {
         
     }
 
-    function oppenedTasks(string name) public checkOwnerAndAccept returns (uint8){
+    function oppenedTasks() public checkOwnerAndAccept returns (uint8){
         
         uint8 oppened = 0;
         for (uint i = 0; i<indexList.length; i++) {
-            if (tasks[indexList[i]].isCompleted) {
+            if (!tasks[indexList[i]].isCompleted) {
                 oppened++;
             }
         }        
@@ -69,7 +69,7 @@ contract taskList {
         return oppened;
     }
 
-    function listTasks(string name) public checkOwnerAndAccept returns (string[]){
+    function listTasks() public checkOwnerAndAccept returns (string[]){
         
         string[] list;
         for (uint i = 0; i<indexList.length; i++) {
@@ -85,13 +85,13 @@ contract taskList {
         return list;
     }
 
-    function nameTasks(uint8 key) public checkOwnerAndAccept returns (string){
+    function getTaskName(uint8 key) public checkOwnerAndAccept returns (string){
 
         return tasks[key].name;
     }
 
 
-    function deleteTasks(uint8 key) public checkOwnerAndAccept {
+    function deleteTask(uint8 key) public checkOwnerAndAccept {
 
         delete tasks[key];
 
@@ -100,8 +100,12 @@ contract taskList {
             if (indexList[i] == key) {
                 indexToDelete = i;
             }
-        }        
-        delete indexList[indexToDelete];   
+        }
+        
+        for (uint i=indexToDelete; i < indexList.length-1; i++) {
+            indexList[i] = indexList[i+1];
+        }
+        indexList.pop(); 
     }
 
     function markComplete(uint8 key) public checkOwnerAndAccept returns (string){
@@ -109,25 +113,4 @@ contract taskList {
         tasks[key].isCompleted = true;
     }
 
-    function renderHelloWorld () public pure returns (string) {
-        return 'helloWorld';
-    }
-
-    // Updates variable `timestamp` with current blockchain time.
-    function touch() external {
-        // Each function that accepts external message must check that
-        // message is correctly signed.
-        require(msg.pubkey() == tvm.pubkey(), 102);
-        // Tells to the TVM that we accept this message.
-        tvm.accept();
-        // Update timestamp
-        //timestamp = now;
-    }
-
-    function sendValue(address dest, uint128 amount, bool bounce) public view {
-        require(msg.pubkey() == tvm.pubkey(), 102);
-        tvm.accept();
-        // It allows to make a transfer with arbitrary settings
-        dest.transfer(amount, bounce, 0);
-    }
 }

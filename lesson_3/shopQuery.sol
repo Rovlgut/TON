@@ -43,10 +43,11 @@ contract shopQuery {
     }
 
     function nextInQuery() public checkOwnerAndAccept returns (string){
+        string next = query[0];
         for (uint i=0; i < query.length-1; i++) {
             query[i] = query[i+1];
         }
         query.pop();
-        return query[0];
+        return next;
     }
 }
