@@ -1,0 +1,60 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "createToken",
+			"inputs": [
+				{"name":"brandName","type":"string"},
+				{"name":"modelName","type":"string"},
+				{"name":"engineHP","type":"uint256"},
+				{"name":"color","type":"string"},
+				{"name":"isManual","type":"bool"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getTokenInfo",
+			"inputs": [
+				{"name":"modelName","type":"string"}
+			],
+			"outputs": [
+				{"name":"tokenBrandName","type":"string"},
+				{"name":"tokenModelName","type":"string"},
+				{"name":"tokenEngineHP","type":"uint256"},
+				{"name":"tokenColor","type":"string"},
+				{"name":"tokenIsManual","type":"bool"},
+				{"name":"tokenValue","type":"uint256"}
+			]
+		},
+		{
+			"name": "setValue",
+			"inputs": [
+				{"name":"modelName","type":"string"},
+				{"name":"value","type":"uint256"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"tokens","type":"optional(cell)"},
+		{"name":"tokenToOwner","type":"optional(cell)"}
+	]
+}
