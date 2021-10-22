@@ -37,24 +37,27 @@ contract Wallet {
     /// @dev Allows to transfer tons to the destination account with fee from sender.
     /// @param dest Transfer target address.
     /// @param value Nanotons value to transfer.
-    function sendTransactionWithFee(address dest, uint128 value) public pure checkOwnerAndAccept {
+    /// @param bounce Flag that enables bounce message in case of target contract error.
+    function sendTransactionWithFee(address dest, uint128 value, bool bounce) public pure checkOwnerAndAccept {
          // Runtime function that allows to make a transfer with fee from sender.
-        dest.transfer(value, true, 0);
+        dest.transfer(value, bounce, 0);
     }
 
     /// @dev Allows to transfer tons to the destination account without fee from sender..
     /// @param dest Transfer target address.
     /// @param value Nanotons value to transfer.
-    function sendTransactionWithOutFee(address dest, uint128 value) public pure checkOwnerAndAccept {
+    /// @param bounce Flag that enables bounce message in case of target contract error.
+    function sendTransactionWithOutFee(address dest, uint128 value, bool bounce) public pure checkOwnerAndAccept {
          // Runtime function that allows to make a transfer without fee from sender.
-        dest.transfer(value, true, 1);
+        dest.transfer(value, bounce, 1);
     }
 
     /// @dev Allows to transfer all tons to the destination account and destroys.
     /// @param dest Transfer target address.
     /// @param value Nanotons value to transfer.
-    function sendAllAndDestroyed(address dest, uint128 value) public pure checkOwnerAndAccept {
+    /// @param bounce Flag that enables bounce message in case of target contract error.
+    function sendAllAndDestroyed(address dest, uint128 value, bool bounce) public pure checkOwnerAndAccept {
          // Runtime function that allows to make a transfer all and destroys.
-        dest.transfer(value, true, 160);
+        dest.transfer(value, bounce, 160);
     }
 }
