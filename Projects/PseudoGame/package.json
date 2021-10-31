@@ -1,0 +1,19 @@
+{
+    "name": "pseudo-game",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "node test.js"
+    },
+    "keywords": [
+        "pseudo",
+        "game"
+    ],
+    "author": "Sergey Gritsay",
+    "dependencies": {
+        "@tonclient/appkit": "^0.2.0",
+        "@tonclient/core": "^1.24.0",
+        "@tonclient/lib-node": "^1.24.0"
+    }
+}

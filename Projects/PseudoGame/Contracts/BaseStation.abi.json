@@ -1,0 +1,121 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "die",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addUnit",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "removeUnit",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getUnitList",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"address[]"}
+			]
+		},
+		{
+			"name": "getDefence",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "setDefence",
+			"inputs": [
+				{"name":"stat","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getHealth",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "acceptAttack",
+			"inputs": [
+				{"name":"atkStat","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attackerAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"attackerAddress","type":"address"}
+			]
+		},
+		{
+			"name": "health",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"health","type":"int256"}
+			]
+		},
+		{
+			"name": "unitsList",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"unitsList","type":"address[]"}
+			]
+		},
+		{
+			"name": "unitsMap",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"unitsMap","type":"map(address,address)"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"defenceStat","type":"uint256"},
+		{"name":"attackerAddress","type":"address"},
+		{"name":"health","type":"int256"},
+		{"name":"unitsList","type":"address[]"},
+		{"name":"unitsMap","type":"map(address,address)"}
+	]
+}

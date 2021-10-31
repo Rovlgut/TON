@@ -1,0 +1,133 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"baseAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"atkAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAttack",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "setAttack",
+			"inputs": [
+				{"name":"stat","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "die",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "baseFall",
+			"inputs": [
+				{"name":"atkAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDefence",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "setDefence",
+			"inputs": [
+				{"name":"stat","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getHealth",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "acceptAttack",
+			"inputs": [
+				{"name":"atkStat","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attackerAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"attackerAddress","type":"address"}
+			]
+		},
+		{
+			"name": "health",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"health","type":"int256"}
+			]
+		},
+		{
+			"name": "baseStationAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"baseStationAddress","type":"address"}
+			]
+		},
+		{
+			"name": "base",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"base","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"defenceStat","type":"uint256"},
+		{"name":"attackerAddress","type":"address"},
+		{"name":"health","type":"int256"},
+		{"name":"baseStationAddress","type":"address"},
+		{"name":"base","type":"address"},
+		{"name":"attackStat","type":"uint256"}
+	]
+}
