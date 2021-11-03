@@ -1,0 +1,17 @@
+Config: default
+Input arguments:
+     tvc: helloDebot.tvc
+      wc: None
+    keys: helloDebot.keys.json
+init_data: None
+is_update_tvc: None
+
+Seed phrase: "victory improve problem tape manual blouse season father hybrid universe rival artist"
+Raw address: 0:f9389bb22c17cdded5aba9205cc5f3066e8e373f908c2814a5bbc2eab5da09a6
+testnet:
+Non-bounceable address (for init): 0QD5OJuyLBfN3tWrqSBcxfMGbo43P5CMKBSlu8LqtdoJphRC
+Bounceable address (for later access): kQD5OJuyLBfN3tWrqSBcxfMGbo43P5CMKBSlu8LqtdoJpkmH
+mainnet:
+Non-bounceable address (for init): UQD5OJuyLBfN3tWrqSBcxfMGbo43P5CMKBSlu8LqtdoJpq_I
+Bounceable address (for later access): EQD5OJuyLBfN3tWrqSBcxfMGbo43P5CMKBSlu8LqtdoJpvIN
+Succeeded
