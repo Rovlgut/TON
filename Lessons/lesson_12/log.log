@@ -6,12 +6,12 @@ Input arguments:
 init_data: None
 is_update_tvc: None
 
-Seed phrase: "victory improve problem tape manual blouse season father hybrid universe rival artist"
-Raw address: 0:f9389bb22c17cdded5aba9205cc5f3066e8e373f908c2814a5bbc2eab5da09a6
+Seed phrase: "farm news act torch ocean aisle strategy summer chief monitor spoil lion"
+Raw address: 0:66fa56c0d87c5b659925f5f444173357c055c5f14e6b5dd72c47236269cbe87d
 testnet:
-Non-bounceable address (for init): 0QD5OJuyLBfN3tWrqSBcxfMGbo43P5CMKBSlu8LqtdoJphRC
-Bounceable address (for later access): kQD5OJuyLBfN3tWrqSBcxfMGbo43P5CMKBSlu8LqtdoJpkmH
+Non-bounceable address (for init): 0QBm-lbA2HxbZZkl9fREFzNXwFXF8U5rXdcsRyNiacvofas4
+Bounceable address (for later access): kQBm-lbA2HxbZZkl9fREFzNXwFXF8U5rXdcsRyNiacvoffb9
 mainnet:
-Non-bounceable address (for init): UQD5OJuyLBfN3tWrqSBcxfMGbo43P5CMKBSlu8LqtdoJpq_I
-Bounceable address (for later access): EQD5OJuyLBfN3tWrqSBcxfMGbo43P5CMKBSlu8LqtdoJpvIN
+Non-bounceable address (for init): UQBm-lbA2HxbZZkl9fREFzNXwFXF8U5rXdcsRyNiacvofRCy
+Bounceable address (for later access): EQBm-lbA2HxbZZkl9fREFzNXwFXF8U5rXdcsRyNiacvofU13
 Succeeded

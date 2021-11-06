@@ -1,0 +1,46 @@
+{
+	"ABI version": 2,
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deployWalletUsingCode",
+			"inputs": [
+				{"name":"walletCode","type":"cell"},
+				{"name":"publicKey0","type":"uint256"},
+				{"name":"publicKey1","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"newWallet","type":"address"}
+			]
+		},
+		{
+			"name": "deployWalletUsingStateInit",
+			"inputs": [
+				{"name":"stateInit","type":"cell"},
+				{"name":"publicKey1","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"newWallet","type":"address"}
+			]
+		},
+		{
+			"name": "m_deployedNumber",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"m_deployedNumber","type":"uint256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}
