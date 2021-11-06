@@ -1,0 +1,60 @@
+{
+	"ABI version": 2,
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"pubkey","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "createItem",
+			"inputs": [
+				{"name":"text","type":"bytes"},
+				{"name":"number","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "updateItem",
+			"inputs": [
+				{"name":"id","type":"uint32"},
+				{"name":"price","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deleteItem",
+			"inputs": [
+				{"name":"id","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getItems",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"id","type":"uint32"},{"name":"name","type":"bytes"},{"name":"number","type":"uint32"},{"name":"createdAt","type":"uint64"},{"name":"isPaid","type":"bool"},{"name":"price","type":"uint32"}],"name":"items","type":"tuple[]"}
+			]
+		},
+		{
+			"name": "getSummary",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"isPaidCount","type":"uint32"},{"name":"notPaidCount","type":"uint32"},{"name":"priceTotal","type":"uint32"}],"name":"summary","type":"tuple"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}

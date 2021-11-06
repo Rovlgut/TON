@@ -1,0 +1,1 @@
+tonos-cli --url http://127.0.0.1 multisig deploy --keys keys.json --local 1000000000000000
