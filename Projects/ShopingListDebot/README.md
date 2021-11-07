@@ -11,3 +11,6 @@ tonos-cli --url http://127.0.0.1 multisig deploy --keys keys.json --local 100000
 `deploy_debot.sh` sligtly modified script from simple ToDo DeBot
 ### Test
 `test.sh <address>` runs DeBot on loca net on given address
+### Deploy Devnet
+`deploy_devnet.sh` same as `deploy.sh` but modified to deploy 2 DeBots in devnet with `deploy_debot_devnet.sh` script
+`deploy_debot_devnet.sh` on step 2 need manually sent Rubies to bot address
